@@ -44,4 +44,5 @@ else
 fi
 
 echo ""
+echo "Archive run completed at: $(date)"
 echo "=== Archiving Complete ==="

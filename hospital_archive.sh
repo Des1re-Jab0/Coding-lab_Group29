@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "=== KNH Log Archiving Process ==="
+mkdir -p archived_logs
 
 TIMESTAMP=$(date +"%Y%m%d_%H%M")
 

@@ -1,4 +1,3 @@
-#!/bin/bash
 
 secure_data() {
     chmod 700 active_logs

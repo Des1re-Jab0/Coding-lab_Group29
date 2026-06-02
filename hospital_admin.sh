@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 initialize_system() {
@@ -17,3 +18,4 @@ initialize_system() {
         mkdir reports
     fi
 }
+

@@ -1,4 +1,5 @@
-#!/bin/bash 
+#!/bin/bash
+
 secure_data() {
 	echo ""
 
@@ -6,7 +7,7 @@ secure_data() {
 
 	chmod 700 active_logs 
 
-	echo "Permission applied. Current state of active_logs:"
+	echo "Permission applied. Current state of active_logs"
 
 	ls -ld active_logs
 }

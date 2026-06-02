@@ -9,5 +9,5 @@ secure_data() {
 
 	echo "Permission applied. Current state of active_logs"
 
-	ls -ld active_logs
+	ls -l active_logs
 }

@@ -1,3 +1,4 @@
+#!/bin/bash
 initialize_system()
 {
     for dir in active_logs archived_logs reports; do
@@ -9,3 +10,4 @@ initialize_system()
         fi
     done
 }
+initialize_system

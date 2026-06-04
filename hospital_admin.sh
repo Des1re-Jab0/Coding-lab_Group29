@@ -23,5 +23,6 @@ initialize_system() {
         fi
     done
 }
+initialize-system
 
 

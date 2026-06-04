@@ -10,7 +10,7 @@ secure_data() {
 	echo "Permissions applied. Current state of active_logs"
 	
 	ls -ld active_logs
-=======
+}
 
 #!/bin/bash
 

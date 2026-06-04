@@ -10,4 +10,7 @@ secure_data() {
 	
 	ls -ld active_logs
 }
-
+main() {
+	secure_data
+}
+main

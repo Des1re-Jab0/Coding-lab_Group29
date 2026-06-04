@@ -13,22 +13,15 @@ secure_data() {
 =======
 
 #!/bin/bash
-
 initialize_system() {
-
-    if [ ! -d active_logs ]; then
-        echo "Creating active_logs directory..."
-        mkdir active_logs
-    fi
-
-    if [ ! -d archived_logs ]; then
-        echo "Creating archived_logs directory..."
-        mkdir archived_logs
-    fi
-
-    if [ ! -d reports ]; then
-        echo "Creating reports directory..."
-        mkdir reports
-    fi
+ for dir in active_logs archived_logs reports; do
+        if [ -d "$dir" ]; then
+            echo "$dir directory already exists."
+        else
+            echo "Creating $dir directory..."
+            mkdir "$dir"
+        fi
+    done
 }
+
 

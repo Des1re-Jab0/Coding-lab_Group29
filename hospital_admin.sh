@@ -11,7 +11,6 @@ secure_data() {
 	
 	ls -ld active_logs
 }
-
 #!/bin/bash
 
 initialize_system() {

@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # ============================================
 # hospital_admin.sh
@@ -51,3 +52,9 @@ echo "========================================="
 echo "  System Environment Secured"
 echo "  Date: $(date)"
 echo "========================================="
+=======
+main() {
+	secure_data
+}
+main
+

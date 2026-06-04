@@ -38,8 +38,6 @@ echo "========================================="
 echo "   KNH Hospital Admin System Starting   "
 echo "========================================="
 
-initialize_system
-secure_data
 
 echo "========================================="
 echo "  System Environment Secured"
@@ -47,6 +45,7 @@ echo "  Date: $(date)"
 echo "========================================="
 =======
 main() {
+	initialize_system
 	secure_data
 }
 main

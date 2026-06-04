@@ -1,10 +1,4 @@
 #!/bin/bash
-# ============================================
-# hospital_admin.sh
-# Member 1: initialize_system()
-# Member 2: secure_data()
-# Member 3: Orchestration logic + system check
-# ============================================
 
 initialize_system() {
     echo ">>> Initializing system directories..."
@@ -51,3 +45,10 @@ echo "========================================="
 echo "  System Environment Secured"
 echo "  Date: $(date)"
 echo "========================================="
+=======
+main() {
+	secure_data
+}
+main
+
+

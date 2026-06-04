@@ -1,29 +1,43 @@
-# Coding-lab_Group29
+# Kenyatta National Hospital (KNH) — Digital Infrastructure
+
+**Coding Lab — Group 29**
 
 ## Project Overview
-KNH Digital Infrastructure — A secure, permission-governed environment
-and analytical dashboard for Kenyatta National Hospital using Shell Scripting.
 
-## Group Members & Roles
-| Member | Role | Script |
-|--------|------|--------|
-| Member 1 | The Architect - initialize_system() | hospital_admin.sh |
-| Member 2 | The Security Lead - secure_data() | hospital_admin.sh |
-| Member 3 | The Orchestrator - execution logic | hospital_admin.sh |
-| Member 4 | The Archivist - log rotation | hospital_archive.sh |
-| Member 5 | Clinical Analyst - process_vitals() | hospital_analysis.sh |
-| Member 6 | Facility Auditor - water_audit() | hospital_analysis.sh |
+A shell-scripting project that sets up, secures, analyzes, and archives the data
+produced by the KNH medical sensor simulator (`hospital_system.py`). The engine
+generates Heart Rate, Temperature, and Water Usage readings; our scripts manage
+the data flow around it.
+
+## Group Roles
+
+| Member | Name                      | GitHub       | Role              | Contribution                                      |
+| :----- | :------------------------ | :------      | :---------------- | :------------------------------------------------ |
+| 1      | Akayesu Ingabire Benigne  | abenigne     | The Architect     | `hospital_admin.sh` — `initialize_system()`       |
+| 2      | SHEJA Yannis              | Yannis-sheja | The Security Lead | `hospital_admin.sh` — `secure_data()`             |
+| 3      | Sia Virginie Millimouno   | Virginie2026 | The Orchestrator  | `hospital_admin.sh` — `main()` execution logic    |
+| 4      | MUNEZERO Marvella         | mmarvellio77 | The Archivist     | `hospital_archive.sh` — log rotation              |
+| 5 & 6  | Desire De Dieu Manzi Jabo | Des1re-Jab0  | Group Lead        | `hospital_analysis.sh` — `process_vitals()`, `water_audit()` |
 
 ## How to Run
-### 1. Setup
+
 ```bash
-./hospital_admin.sh
-```
-### 2. Start engine
-```bash
+# Start / stop the data engine
 python3 hospital_system.py start
-```
-### 3. Stop engine
-```bash
 python3 hospital_system.py stop
+
+# Set up and secure the environment
+bash hospital_admin.sh
+
+# Analyze live data
+bash hospital_analysis.sh
+
+# Archive the logs
+bash hospital_archive.sh
 ```
+
+## Data Privacy
+
+Per hospital policy, no actual patient data is committed to this repository.
+The `active_logs/`, `archived_logs/`, and `reports/` folders are excluded
+through `.gitignore`.
